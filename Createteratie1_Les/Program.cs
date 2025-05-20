@@ -11,6 +11,7 @@
                 Console.WriteLine("PAS DEZE REGEL AAN OF VOEG IETS TOE");
                 Console.WriteLine("bryan was here");
                 Console.WriteLine("Hoi John");
+                Console.WriteLine("HELP ME");
             }
             int y = 10;
             int s = 0;
