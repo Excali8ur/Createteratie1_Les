@@ -13,6 +13,7 @@
                 Console.WriteLine("Hoi John");
                 Console.WriteLine("HELP ME");
                 Console.WriteLine("Just came here for the song");
+                Console.WriteLine("Errmm what ta skibidi");
             }
             int y = 10;
             int s = 0;
