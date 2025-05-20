@@ -10,6 +10,7 @@
                 Console.WriteLine("x groter dan 5");
                 Console.WriteLine("PAS DEZE REGEL AAN OF VOEG IETS TOE");
                 Console.WriteLine("bryan was here");
+                Console.WriteLine("Hoi John");
             }
             int y = 10;
             int s = 0;
