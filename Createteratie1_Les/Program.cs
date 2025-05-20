@@ -2,26 +2,24 @@
 {
     internal class Program
     {
+        static void MaakDobbelstenen()
+        {
+            Dobbelsteen d1 = new Dobbelsteen();
+            d1.Kleur = "Groen";
+            d1.KleurOgen = "Zwart";
+            d1.Vorm = "Kubus";
+            d1.Materiaal = "Foam";
+            d1.AantalZijden = 6;
+            //d1.WaardePerZijde = "1 t/m 6";
+            d1.WaardePerZijde = new List<int>([1, 2, 3, 4, 5, 6]);
+            d1.MaxWaarde = 6;
+            d1.MinWaarde = 1;
+            d1.Grote = "Groot";
+        }
+
         static void Main(string[] args)
         {
-            int x = 10;
-            if (x > 5)
-            {
-                Console.WriteLine("x groter dan 5");
-                Console.WriteLine("BlaBLaBLa");
-                Console.WriteLine("bryan was here");
-                Console.WriteLine("Hoi John");
-                Console.WriteLine("HELP ME");
-                Console.WriteLine("Just came here for the song");
-                Console.WriteLine("Errmm what ta skibidi");
-            }
-            int y = 10;
-            int s = 0;
-            while (y > 0)
-            {
-                Console.WriteLine($"hallo + {s}");
-                    s += 1;
-            }
+            MaakDobbelstenen();
         }
     }
 }
