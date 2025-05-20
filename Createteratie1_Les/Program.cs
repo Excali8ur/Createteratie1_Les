@@ -9,9 +9,8 @@
             {
                 Console.WriteLine("x groter dan 5");
                 Console.WriteLine("PAS DEZE REGEL AAN OF VOEG IETS TOE");
-<<<<<<< HEAD
-=======
                 Console.WriteLine("bryan was here");
+                Console.WriteLine("Hoi John");
             }
             int y = 10;
             int s = 0;
@@ -19,7 +18,6 @@
             {
                 Console.WriteLine($"hallo + {s}");
                     s += 1;
->>>>>>> eef01c9a6548ec80edf116c77ad06f21b93cf065
             }
         }
     }
