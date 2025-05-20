@@ -12,6 +12,7 @@
                 Console.WriteLine("bryan was here");
                 Console.WriteLine("Hoi John");
                 Console.WriteLine("HELP ME");
+                Console.WriteLine("Just came here for the song");
             }
             int y = 10;
             int s = 0;
