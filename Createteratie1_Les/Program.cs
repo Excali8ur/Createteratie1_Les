@@ -8,7 +8,7 @@
             if (x > 5)
             {
                 Console.WriteLine("x groter dan 5");
-                Console.WriteLine("PAS DEZE REGEL AAN OF VOEG IETS TOE");
+                Console.WriteLine("BlaBLaBLa");
                 Console.WriteLine("bryan was here");
             }
 
