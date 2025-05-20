@@ -7,7 +7,7 @@
             int x = 10;
             if (x > 5)
             {
-                Console.WriteLine("x > 5");
+                Console.WriteLine("x groter dan 5");
             }
 
         }
