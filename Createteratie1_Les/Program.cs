@@ -1,6 +1,9 @@
-﻿namespace Createteratie1_Les
+﻿using Createteratie1_Les;
+using Createteratie1_Les.Klassen;
+
+namespace Createteratie1_Les
 {
-    internal class Program
+    public class Program
     {
         static List<Dobbelsteen> MaakDobbelstenen()
         {
@@ -84,27 +87,56 @@
 
         static void Main(string[] args)
         {
-            List<Dobbelsteen> dobbelstenenLijst;
+            Rekening rekening = new Rekening(8);
 
-            dobbelstenenLijst = MaakDobbelstenen();
-            ToonDobbelstenen(dobbelstenenLijst);
+            Gerecht gerecht1 = new Gerecht();
+            gerecht1.Naam = "SpaghettiStamppot";
+            gerecht1.Prijs = 17.50;
 
-            //Rol alle dobbelstenen een aantal keren achter elkaar:            
-            int aantalKeerRollen = 10;
-            Console.WriteLine(new string('-', 50));
+            Gerecht gerecht2 = new Gerecht();
+            gerecht2.Naam = "ROde mul met groente";
+            gerecht2.Prijs = 28.90;
+
+            rekening.Gerechten.Add(gerecht1);
+            rekening.Gerechten.Add(gerecht1);
+            rekening.Gerechten.Add(gerecht2);
+
+            rekening.BerekenTotaalbedrag();
+            Console.WriteLine("Totaalbedrag: " + rekening.TotaalBedrag);
+        }
+
+        /*
+        //DOBBELSTEEN
+        List<Dobbelsteen> dobbelstenenLijst;
+
+        dobbelstenenLijst = MaakDobbelstenen();
+        ToonDobbelstenen(dobbelstenenLijst);
+
+        //Rol alle dobbelstenen een aantal keren achter elkaar:            
+        int aantalKeerRollen = 10;
+        Console.WriteLine(new string ('-', 50));
             Console.WriteLine("Rol alle dobbelstenen "+aantalKeerRollen+"x:");
             
             for (int i = 1; i <= aantalKeerRollen; i++)
             {
-                Console.WriteLine(new string('~', 25));
+                Console.WriteLine(new string ('~', 25));
                 Console.WriteLine("Rol " + i.ToString());
-                Console.WriteLine(new string('~', 25));
+                Console.WriteLine(new string ('~', 25));
 
                 foreach (Dobbelsteen d in dobbelstenenLijst)
                 {
                     Console.WriteLine(d.Kleur + ": " + d.Rollen());
                 }
             }
-        }
+
+            //VERZAMELINGENLEER (DE)
+            //Is A c= C?
+            Verzameling A = new Verzameling(new List<int>([1, 222, 4, 6]));
+            Verzameling B = new Verzameling(new List<int>([4, 6, 8]));
+            Verzameling C = new Verzameling(new List<int>([4, 36, 8, 6]));
+
+            //Is A c= B?
+            Console.WriteLine("A is deelverzameling van B: " + A.isDeelverzamelingVan(B));
+            */
     }
 }
